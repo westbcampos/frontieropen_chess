@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2° Frontier Open 2026 - Grand Prix de Xadrez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .chess-pattern {
+            background-color: #f3f4f6;
+            background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .gradient-overlay {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Hero Section -->
+    <header class="relative h-[80vh] flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=2000" alt="Tabuleiro de Xadrez" class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <div class="mb-6 flex justify-center space-x-4">
+                <span class="bg-blue-600 text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase">Grand Prix 2026</span>
+                <span class="bg-amber-500 text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase text-slate-900">Válido para ELO FIDE</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">2° FRONTIER OPEN 2026</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light italic">Pedro Juan Caballero, Paraguai</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#inscricao" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                    Inscrever-se Agora
+                </a>
+                <a href="#programacao" class="bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Ver Programação
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Info Rápida -->
+    <section class="py-12 bg-white shadow-sm relative z-20 -mt-10 max-w-6xl mx-auto rounded-xl grid grid-cols-1 md:grid-cols-3 gap-8 px-8 border border-gray-100">
+        <div class="flex items-center space-x-4">
+            <div class="bg-blue-100 p-4 rounded-full text-blue-600">
+                <i class="fa-solid fa-calendar-days text-2xl"></i>
+            </div>
+            <div>
+                <h4 class="font-bold">Data</h4>
+                <p class="text-sm text-gray-600">27 de Fev a 01 de Março, 2026</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="bg-blue-100 p-4 rounded-full text-blue-600">
+                <i class="fa-solid fa-location-dot text-2xl"></i>
+            </div>
+            <div>
+                <h4 class="font-bold">Local</h4>
+                <p class="text-sm text-gray-600">Salón Emiliano R. Fernández, PJC</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="bg-blue-100 p-4 rounded-full text-blue-600">
+                <i class="fa-solid fa-stopwatch text-2xl"></i>
+            </div>
+            <div>
+                <h4 class="font-bold">Ritmo</h4>
+                <p class="text-sm text-gray-600">Clássico: 60 min + 30 seg inc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes do Torneio -->
+    <section class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-slate-900 border-l-4 border-amber-500 pl-4">Sobre o Evento</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    O 2° Frontier Open é uma realização conjunta entre <strong>CAXPP e CLUB ELITE</strong>, reunindo os melhores enxadristas da fronteira entre Paraguai e Brasil. O torneio será disputado pelo <strong>Sistema Suíço em 7 rodadas</strong> e é obrigatório estar em dia com a licença FEPARAJ 2026.
+                </p>
+                
+                <h3 class="text-xl font-bold mb-4">Arbitragem</h3>
+                <ul class="space-y-2 mb-8 text-gray-700">
+                    <li><i class="fa-solid fa-user-tie mr-2 text-blue-600"></i> AI Gualberto Benítez (Principal) - PY</li>
+                    <li><i class="fa-solid fa-user-tie mr-2 text-blue-600"></i> AF Westerley Batista Campos - BR</li>
+                </ul>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <h4 class="font-bold text-blue-900 mb-2 underline decoration-amber-500">Criterios de Desempate</h4>
+                    <ol class="list-decimal list-inside text-blue-800 space-y-1 text-sm">
+                        <li>Resultado Particular</li>
+                        <li>Buchholz Cut-1</li>
+                        <li>Buchholz Total</li>
+                        <li>Sonneborn-Berger</li>
+                        <li>Maior número de vitórias</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="programacao" class="bg-slate-900 text-white p-8 rounded-2xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-8 text-center text-amber-400">Cronograma de Rodadas</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2">
+                        <span><strong>Sexta:</strong> Ronda 1</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">20:30</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2 text-blue-200">
+                        <span><strong>Sábado:</strong> Ronda 2</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">09:30</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2 text-blue-200">
+                        <span><strong>Sábado:</strong> Ronda 3</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">13:30</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2 text-blue-200">
+                        <span><strong>Sábado:</strong> Ronda 4</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">17:30</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2 text-amber-100">
+                        <span><strong>Domingo:</strong> Ronda 5</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">08:30</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2 text-amber-100">
+                        <span><strong>Domingo:</strong> Ronda 6</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">13:00</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2 text-amber-100">
+                        <span><strong>Domingo:</strong> Ronda 7</span>
+                        <span class="bg-slate-800 px-3 py-1 rounded">16:00</span>
+                    </div>
+                    <div class="mt-8 text-center bg-amber-500 text-slate-900 font-bold py-2 rounded">
+                        Premiación: Domingo às 19:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premiação -->
+    <section class="py-20 bg-slate-100 chess-pattern">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-slate-900">Premiação Principal</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-amber-500">
+                    <i class="fa-solid fa-trophy text-amber-500 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold">Campeão</h3>
+                    <p class="text-2xl font-bold text-slate-900 mt-2">900.000 GS</p>
+                    <span class="text-xs text-gray-500">+ TROFÉU</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-slate-400">
+                    <i class="fa-solid fa-award text-slate-400 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold">Vice-Campeão</h3>
+                    <p class="text-2xl font-bold text-slate-900 mt-2">700.000 GS</p>
+                    <span class="text-xs text-gray-500">+ TROFÉU</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-amber-700">
+                    <i class="fa-solid fa-medal text-amber-700 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold">Terceiro Lugar</h3>
+                    <p class="text-2xl font-bold text-slate-900 mt-2">500.000 GS</p>
+                    <span class="text-xs text-gray-500">+ TROFÉU</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-blue-500">
+                    <i class="fa-solid fa-medal text-blue-500 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-bold">Feminino</h3>
+                    <p class="text-2xl font-bold text-slate-900 mt-2">300.000 GS</p>
+                    <span class="text-xs text-gray-500">+ TROFÉU</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fa-solid fa-plus-circle mr-2 text-blue-600"></i> Prêmios Especiais & Categorias</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
+                    <div class="flex justify-between border-b pb-1"><span>Quarto Lugar</span> <strong>400.000 Gs</strong></div>
+                    <div class="flex justify-between border-b pb-1"><span>Quinto Lugar</span> <strong>300.000 Gs</strong></div>
+                    <div class="flex justify-between border-b pb-1"><span>Melhor CAXPP</span> <strong>250.000 Gs</strong></div>
+                    <div class="flex justify-between border-b pb-1"><span>Melhor ELITE</span> <strong>250.000 Gs</strong></div>
+                    <div class="flex justify-between border-b pb-1"><span>Melhor Estrangeiro</span> <strong>300.000 Gs</strong></div>
+                    <div class="flex justify-between border-b pb-1 italic text-blue-600"><span>Sub-6 a Sub-20 (Abs/Fem)</span> <span>Medalhas</span></div>
+                    <div class="flex justify-between border-b pb-1"><span>Melhor +50 / +65</span> <span>Medalhas</span></div>
+                    <div class="flex justify-between border-b pb-1"><span>Sub 2000 / Sub 1700 ELO</span> <span>Medalhas</span></div>
+                    <div class="flex justify-between border-b pb-1"><span>Melhor Sem ELO</span> <span>Medalhas</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscrição e Pagamento -->
+    <section id="inscricao" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Inscrições</h2>
+            <p class="text-center text-red-600 font-bold mb-12">Encerramento: Sexta, 27 de Fev de 2026 às 12:00h</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Jogadores Paraguai -->
+                <div class="p-8 rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fa-solid fa-flag-checkered mr-3 text-red-600"></i> Jogadores Paraguai</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex justify-between bg-white p-3 rounded shadow-sm">
+                            <span>Inscrição Geral:</span> <strong>150.000 Gs</strong>
+                        </div>
+                        <div class="flex justify-between bg-white p-3 rounded shadow-sm border-l-4 border-green-500">
+                            <span>CAPEN, ELITE e agregados:</span> <strong>100.000 Gs</strong>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-sm uppercase text-gray-500 mb-3">Dados Bancários (Banco Nación Argentina)</h4>
+                        <p class="text-sm"><strong>Titular:</strong> Federación Paraguaya de Ajedrez</p>
+                        <p class="text-sm"><strong>Conta:</strong> 556.424 (Corrente)</p>
+                        <p class="text-sm"><strong>RUC:</strong> 80031699-1</p>
+                        <p class="text-xs mt-4 text-blue-600">Enviar comprovante + dados (ID FIDE, Nome, Data Nasc) para <strong>feparaj@gmail.com</strong></p>
+                    </div>
+                </div>
+
+                <!-- Jogadores Brasil -->
+                <div class="p-8 rounded-2xl bg-gray-50 border-2 border-dashed border-blue-200">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fa-solid fa-flag-checkered mr-3 text-green-600"></i> Jogadores do Brasil</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex justify-between bg-white p-3 rounded shadow-sm">
+                            <span>Monto Geral:</span> <strong>R$ 130</strong>
+                        </div>
+                        <div class="flex justify-between bg-white p-3 rounded shadow-sm">
+                            <span>FESMAX (Em dia):</span> <strong>R$ 100</strong>
+                        </div>
+                        <div class="flex justify-between bg-white p-3 rounded shadow-sm border-l-4 border-blue-500">
+                            <span>Jogadores CAXPP:</span> <strong>R$ 85</strong>
+                        </div>
+                    </div>
+                    <div class="bg-blue-600 text-white p-6 rounded-lg shadow-md">
+                        <h4 class="font-bold mb-2 flex items-center"><i class="fa-solid fa-money-bill-transfer mr-2"></i> Pagamento via PIX</h4>
+                        <p class="text-lg font-mono tracking-wider bg-blue-700 p-2 rounded text-center">perlacosmetics@gmail.com</p>
+                        <p class="text-xs mt-3 opacity-80">Após o PIX, preencha o formulário oficial:</p>
+                        <a href="https://forms.gle/DRg8ZRf4GHooi8TR9" target="_blank" class="block mt-4 text-center bg-white text-blue-600 font-bold py-2 rounded-lg hover:bg-gray-100 transition">
+                            Preencher Formulário Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center p-6 bg-slate-100 rounded-xl">
+                <p class="text-gray-700">Dúvidas? Entre em contato via WhatsApp: <span class="font-bold text-blue-600">+55 67 99300-4464</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Normas e Regulamento -->
+    <section class="py-20 bg-slate-900 text-slate-300">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-white text-center">Normas Legais Importantes</h2>
+            <div class="space-y-6 text-sm md:text-base leading-relaxed">
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <h4 class="text-white font-bold mb-2">Tolerância (WO)</h4>
+                    <p>Será aplicado WO após <strong>60 minutos</strong> do início oficial da rodada para o ritmo clássico.</p>
+                </div>
+                
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <h4 class="text-white font-bold mb-2">Ausências</h4>
+                    <p>Uma ausência sem aviso prévio causa a <strong>eliminação automática</strong> do jogador. Não serão aceitas duas ausências com aviso prévio.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg">
+                    <h4 class="text-white font-bold mb-2">Apelações</h4>
+                    <p>A contestação de uma decisão arbitral deve ser feita por escrito em até 30 minutos após a rodada, mediante taxa de <strong>Gs. 250.000</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0">
+                <h2 class="text-2xl font-bold">FRONTIER OPEN</h2>
+                <p class="text-slate-500 text-sm">Organizado por CAXPP - CLUB ELITE</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-slate-400">© 2026 - Federación Paraguaya de Ajedrez (FEPARAJ)</p>
+                <div class="flex justify-center md:justify-end space-x-4 mt-4 text-2xl">
+                    <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
